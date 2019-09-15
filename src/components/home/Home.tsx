@@ -1,8 +1,5 @@
 import React from "react";
 
-import { BottomLevel } from "../home/BottomLevel";
-import { TopLevel } from "../home/TopLevel";
-
 interface HomeProps {};
 
 type Props = HomeProps;
@@ -15,8 +12,7 @@ export class Home extends React.Component<Props> {
   render() {
     return (
       <div>
-        <TopLevel />
-        <BottomLevel />
+        <p>New Perspectives Network</p>
       </div>
     );
   }

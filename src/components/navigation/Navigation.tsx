@@ -22,13 +22,6 @@ export class Navigation extends React.Component<Props> {
               <NavDropdown src="../../assets/logo.svg" title={<NavBarImage/>} id="basic-nav-dropdown">
                 <NavDropdown.Item href={this.props.url + "/home"}>Home</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href={this.props.url + "/gallery"}>Gallery</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href={this.props.url + "/about"}>About</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href={this.props.url + "/testimonials"}>Testimonials</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href={this.props.url + "/contact"}>Book Me</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
