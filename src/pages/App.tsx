@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter, Redirect } from "react-router-dom";
 
 import { Main } from "../pages/main/Main";
-import { Navigation } from "../pages/navigation/Navigation";
+import { Navigation } from "./common/Navigation";
 
 export class App extends React.Component {
   state = {
