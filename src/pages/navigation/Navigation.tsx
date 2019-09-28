@@ -18,7 +18,7 @@ export class Navigation extends React.Component<Props> {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto nav">
+          <Nav className="mr-auto nav centered">
             <Nav>
               <Link className="item" to="/home">
                 Home

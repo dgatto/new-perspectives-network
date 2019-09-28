@@ -2,14 +2,23 @@ html, body {
     background-color: solid #F5F5F5;
 }
 
-.header {
+.centered {
     margin: 0 auto;
+}
+
+.header-container .header {
+    font-size: 40px;
+    text-align: center;
+}
+
+.welcome-container {
+    height: 100vh;
 }
 
 .homepage-navigation-bar {
     height: 100px;
     background-color: #f0706e;
-    border-radius: 0px!important;
+    border-radius: 0px !important;
 }
 
 .homepage-navigation-bar .navbar-brand img {
@@ -19,13 +28,38 @@ html, body {
     left: 5px;
 }
 
-.homepage-navigation-bar .nav {
-    margin: 0 auto;
+.homepage-navigation-bar .item {
+    width: 160px;
+    font-size: 20px;
+    color: whitesmoke;
 }
 
-.homepage-navigation-bar .item {
-    margin-left: 40px;
-    margin-right: 40px;
+.header-separator {
+    background-color: #f0706e;
+}
+
+.content-separator {
+    background-color: lightgray;
+    width: 100%;
+}
+
+.home-content .paragraph {
     font-size: 20px;
-    color: whitesmoke !important;
+    text-align: center;
+}
+
+.learn-more-button {
+    font-size: 15px !important;
+}
+
+.red {
+    color: #f0706e;
+}
+
+.content-header .header {
+font-size: 25px;
+}
+
+.community-content-row .image img {
+    width: 100%;
 }
