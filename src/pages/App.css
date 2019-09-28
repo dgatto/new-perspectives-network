@@ -2,33 +2,30 @@ html, body {
     background-color: solid #F5F5F5;
 }
 
-.homepage-navigation-bar nav {
-    height: 75px;
-    background-color: #f0706e!important;
+.header {
+    margin: 0 auto;
+}
+
+.homepage-navigation-bar {
+    height: 100px;
+    background-color: #f0706e;
     border-radius: 0px!important;
 }
 
-.homepage-navigation-bar .navbar-brand {
-    width: 100px;
-}
-
-.homepage-navigation-bar .logo-image {
-    width: 100px;
+.homepage-navigation-bar .navbar-brand img {
+    width: 130px; 
     position: absolute;
     top: 5px;
     left: 5px;
 }
 
-.homepage-navigation-bar .items {
+.homepage-navigation-bar .nav {
     margin: 0 auto;
 }
 
-.homepage-navigation-bar .items li {
+.homepage-navigation-bar .item {
     margin-left: 40px;
     margin-right: 40px;
-}
-
-.homepage-navigation-bar .items li a {
-    font-size: 15px;
-    color: white !important;
+    font-size: 20px;
+    color: whitesmoke !important;
 }

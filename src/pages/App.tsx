@@ -17,7 +17,7 @@ export class App extends React.Component {
         <BrowserRouter>
           <Navigation url={this.state.url}/>
           <Main/>
-          <Redirect to='/home'/>
+          <Redirect to='/'/>
         </BrowserRouter>
       </div>
     );

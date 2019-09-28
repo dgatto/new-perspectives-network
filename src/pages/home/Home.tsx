@@ -12,8 +12,7 @@ export class Home extends React.Component<Props> {
   render() {
     return (
       <div>
-        <p>New Perspectives Network</p>
-        <img src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"/>
+        <p className="header">Welcome to New Perspectives Network</p>
       </div>
     );
   }

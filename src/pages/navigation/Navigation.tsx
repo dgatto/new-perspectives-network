@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import { Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 interface PassedProps {
   url: string;
@@ -14,65 +16,37 @@ export class Navigation extends React.Component<Props> {
 
   render() {
     return (
-      <div className="navigation-bar homepage-navigation-bar">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light ">
-          <a className="navbar-brand" href="#">
-            <img className="logo-image" src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"/>
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto items">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="gallery">
-                  Gallery
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="community">
-                  Community
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="contact-us">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    );
-  }
-}
-
-class NavBarImage extends React.Component {
-  render() {
-    return (
-      <Image
-        src={require('../../assets/logo.svg')}
-        style={{ width: 30, height: 30 }}
-      />
+      <Navbar className="homepage-navigation-bar" expand="lg">
+        <Navbar.Brand className="navbar-brand">
+          <img src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto nav">
+            <Nav>
+              <Link className="item" to="/home">
+                Home
+              </Link>
+            </Nav>
+            <Nav>
+              <Link className="item" to="/about">
+                About
+              </Link>
+            </Nav>
+            <Nav>
+              <Link className="item" to="/gallery">
+                Gallery
+              </Link>
+            </Nav>
+            <Nav>
+              <Link className="item" to="/community">
+                Community
+              </Link>
+            </Nav>
+            <Nav className="item">Contact Us</Nav>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
