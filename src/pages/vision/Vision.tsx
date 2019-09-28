@@ -1,14 +1,10 @@
-import React from "react";
+import React from 'react';
 
-interface VisionProps {};
+interface VisionProps {}
 
 type Props = VisionProps;
 
 export class Vision extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

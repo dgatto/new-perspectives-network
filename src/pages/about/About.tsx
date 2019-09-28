@@ -1,14 +1,10 @@
-import React from "react";
+import React from 'react';
 
-interface AboutProps {};
+interface AboutProps {}
 
 type Props = AboutProps;
 
 export class About extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

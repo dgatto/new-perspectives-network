@@ -10,15 +10,11 @@ interface PassedProps {
 type Props = PassedProps;
 
 export class Navigation extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     return (
       <Navbar className="homepage-navigation-bar" expand="lg">
         <Navbar.Brand className="navbar-brand">
-          <img src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM" />
+          <img alt="Not found" src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

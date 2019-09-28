@@ -5,10 +5,6 @@ interface CommunityProps {};
 type Props = CommunityProps;
 
 export class Community extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

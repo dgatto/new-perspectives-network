@@ -5,10 +5,6 @@ interface HomeProps {};
 type Props = HomeProps;
 
 export class Home extends React.Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
