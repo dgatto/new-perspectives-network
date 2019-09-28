@@ -2,9 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import { Home } from "../home/Home";
-import { About } from "../about/About";
-import { Gallery } from "../gallery/Gallery";
-import { Community } from "../community/Community";
 
 interface PassedProps {}
 
@@ -14,10 +11,7 @@ export class Main extends React.Component<Props> {
   render() {
     return (
         <Switch>
-            <Route exact path='/' component={Home}></Route>
-            <Route exact path='/about' component={About}></Route>
-            <Route exact path='/gallery' component={Gallery}></Route>
-            <Route exact path='/community' component={Community}></Route>
+            <Route exact path='/home' component={Home}></Route>
         </Switch>
     );
   }

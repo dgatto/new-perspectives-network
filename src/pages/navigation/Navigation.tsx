@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Image, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 interface PassedProps {
   url: string;
@@ -18,10 +17,7 @@ export class Navigation extends React.Component<Props> {
       <div className="navigation-bar homepage-navigation-bar">
         <nav className="navbar navbar-expand-lg navbar-light bg-light ">
           <a className="navbar-brand" href="#">
-            <img
-              className="logo-image"
-              src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
-            />
+            <img className="logo-image" src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"/>
           </a>
           <button
             className="navbar-toggler"
@@ -38,27 +34,27 @@ export class Navigation extends React.Component<Props> {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto items">
               <li className="nav-item active">
-                <a className="nav-link">
-                  <Link to="/">Home</Link>
+                <a className="nav-link" href="#">
+                  Home <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">
-                  <Link to="/about">About</Link>
+                <a className="nav-link" href="about">
+                  About
                 </a>
               </li>
               <li className="nav-item">
-              <a className="nav-link">
-                  <Link to="/gallery">Gallery</Link>
+                <a className="nav-link" href="gallery">
+                  Gallery
                 </a>
               </li>
               <li className="nav-item">
-              <a className="nav-link">
-                  <Link to="/community">Community</Link>
+                <a className="nav-link" href="community">
+                  Community
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">
+                <a className="nav-link" href="contact-us">
                   Contact Us
                 </a>
               </li>
@@ -66,6 +62,17 @@ export class Navigation extends React.Component<Props> {
           </div>
         </nav>
       </div>
+    );
+  }
+}
+
+class NavBarImage extends React.Component {
+  render() {
+    return (
+      <Image
+        src={require('../../assets/logo.svg')}
+        style={{ width: 30, height: 30 }}
+      />
     );
   }
 }
