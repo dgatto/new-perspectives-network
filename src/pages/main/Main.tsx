@@ -15,7 +15,7 @@ export class Main extends React.Component<Props> {
   render() {
     return (
         <Switch>
-            <Route exact path='/home' component={Home}></Route>
+            <Route exact path='/' component={Home}></Route>
             <Route exact path='/about' component={About}></Route>
             <Route exact path='/community' component={Community}></Route>
             <Route exact path='/gallery' component={Gallery}></Route>
