@@ -39,6 +39,11 @@ export class Navigation extends React.Component<Props> {
                 Community
               </Link>
             </Nav>
+            <Nav>
+              <Link className="item" to="/vision">
+                Vision
+              </Link>
+            </Nav>
             <Nav className="item">Contact Us</Nav>
           </Nav>
         </Navbar.Collapse>
