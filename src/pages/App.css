@@ -11,10 +11,6 @@ html, body {
     text-align: center;
 }
 
-.welcome-container {
-    height: 100vh;
-}
-
 .homepage-navigation-bar {
     height: 100px;
     background-color: #f0706e;

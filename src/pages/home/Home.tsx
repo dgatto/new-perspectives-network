@@ -13,7 +13,7 @@ export class Home extends React.Component<Props> {
   render() {
     return (
       <Container className="welcome-container">
-        <Row className="">
+        <Row>
           <div className="header-container centered">
             <p className="header centered mt-5 mb-5">
               Welcome to New Perspectives Network
