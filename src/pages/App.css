@@ -21,6 +21,10 @@ html, body {
     border-radius: 0px !important;
 }
 
+.homepage-navigation-bar .nav {
+    margin: 0 auto;
+}
+
 .homepage-navigation-bar .navbar-brand img {
     width: 130px; 
     position: absolute;

@@ -3,8 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import ReactPlayer from 'react-player'
-
+import ReactPlayer from 'react-player';
 
 interface HomeProps {}
 
@@ -23,7 +22,7 @@ export class Home extends React.Component<Props> {
         </Row>
         <hr className="header-separator mb-5" />
         <Row className="">
-          <div className="home-content centered mb-5">
+          <div className="home-content centered mb-3">
             <p className="paragraph">
               <span className="red">Who we are: </span>New Perspectives is a
               blah blah blah lets keep this short because we’re already gonna
@@ -39,11 +38,10 @@ export class Home extends React.Component<Props> {
             Want to learn more about our team?
           </Button>
         </Row>
-        <hr className="content-separator mt-5" />
-        <Row className="">
+        <Row>
           <div className="content-header centered">
             <p className="header centered mt-5 mb-5">
-              Here's the type of content you'll see here at New Perspectives
+              Here's the type of content you'll see at New Perspectives
             </p>
           </div>
         </Row>
@@ -68,7 +66,7 @@ export class Home extends React.Component<Props> {
           </Col>
         </Row>
         <Row className="">
-        <Button
+          <Button
             variant="outline-primary"
             className="centered learn-more-button mt-5"
           >
@@ -77,9 +75,11 @@ export class Home extends React.Component<Props> {
         </Row>
         <hr className="content-separator mt-5" />
         <Row>
-          <ReactPlayer className="player centered mt-5" url='https://www.youtube.com/watch?v=u21W_tfPVrY'></ReactPlayer>
+          <ReactPlayer
+            className="player centered mt-5"
+            url="https://www.youtube.com/watch?v=u21W_tfPVrY"
+          ></ReactPlayer>
         </Row>
-
       </Container>
     );
   }
