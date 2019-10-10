@@ -15,14 +15,14 @@ export class Home extends React.Component<Props> {
       <Container className="welcome-container">
         <Row>
           <div className="header-container centered">
-            <p className="header centered mt-5 mb-5">
+            <p className="header centered">
               Welcome to New Perspectives Network
             </p>
           </div>
         </Row>
-        <hr className="header-separator mb-5" />
+        <hr className="header-separator separator" />
         <Row className="">
-          <div className="home-content centered mb-3">
+          <div className="home-content centered">
             <p className="paragraph">
               <span className="red">Who we are: </span>New Perspectives is a
               blah blah blah lets keep this short because we’re already gonna
@@ -33,14 +33,14 @@ export class Home extends React.Component<Props> {
         <Row>
           <Button
             variant="outline-primary"
-            className="centered learn-more-button mb-5"
+            className="centered learn-more-button"
           >
             Want to learn more about our team?
           </Button>
         </Row>
         <Row>
           <div className="content-header centered">
-            <p className="header centered mt-5 mb-5">
+            <p className="header centered">
               Here's the type of content you'll see at New Perspectives
             </p>
           </div>
@@ -68,15 +68,15 @@ export class Home extends React.Component<Props> {
         <Row className="">
           <Button
             variant="outline-primary"
-            className="centered learn-more-button mt-5"
+            className="centered learn-more-button"
           >
             Want to see more footage?
           </Button>
         </Row>
-        <hr className="content-separator mt-5" />
+        <hr className="content-separator separator" />
         <Row>
           <ReactPlayer
-            className="player centered mt-5"
+            className="player centered"
             url="https://www.youtube.com/watch?v=u21W_tfPVrY"
           ></ReactPlayer>
         </Row>
