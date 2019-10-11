@@ -23,7 +23,7 @@ export class Home extends React.Component<Props> {
         <hr className="header-separator separator" />
         <Row className="">
           <div className="home-content centered">
-            <p className="paragraph">
+            <p className="paragraph-content">
               <span className="red">Who we are: </span>New Perspectives is a
               blah blah blah lets keep this short because we’re already gonna
               have a whole page about it.
