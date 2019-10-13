@@ -14,14 +14,14 @@ export class Home extends React.Component<Props> {
     return (
       <Container className="welcome-container">
         <Row>
-          <div className="header-container centered">
+          <div className="centered">
             <p className="header centered">
               Welcome to New Perspectives Network
             </p>
           </div>
         </Row>
         <hr className="header-separator separator" />
-        <Row className="">
+        <Row>
           <div className="home-content centered">
             <p className="paragraph-content">
               <span className="red">Who we are: </span>New Perspectives is a
