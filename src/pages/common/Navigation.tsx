@@ -14,11 +14,14 @@ export class Navigation extends React.Component<Props> {
     return (
       <Navbar className="homepage-navigation-bar centered" expand="lg">
         <Navbar.Brand className="navbar-brand">
-          <img alt="Not found" src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM" />
+          <img
+            alt="Not found"
+            src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto nav centered">
+          <Nav className="mr-auto nav">
             <Nav>
               <Link className="item" to="/">
                 Home

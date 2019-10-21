@@ -38,6 +38,7 @@ export class Home extends React.Component<Props> {
             Want to learn more about our team?
           </Button>
         </Row>
+        <hr className="separator" />
         <Row>
           <div className="content-header centered">
             <p className="header centered">
@@ -73,7 +74,7 @@ export class Home extends React.Component<Props> {
             Want to see more footage?
           </Button>
         </Row>
-        <hr className="content-separator separator" />
+        <hr className="separator" />
         <Row>
           <ReactPlayer
             className="player centered"
