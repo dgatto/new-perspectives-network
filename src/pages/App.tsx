@@ -1,23 +1,23 @@
-import "./App.css";
+import './App.scss';
 
-import React from "react";
-import { BrowserRouter, Redirect } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Redirect } from 'react-router-dom';
 
-import { Main } from "../pages/main/Main";
-import { Navigation } from "./common/Navigation";
+import { Main } from '../pages/main/Main';
+import { Navigation } from './common/Navigation';
 
 export class App extends React.Component {
   state = {
-    url: "",
-  }
+    url: ''
+  };
 
   render() {
     return (
-      <div className='app'>
+      <div className="app">
         <BrowserRouter>
-          <Navigation url={this.state.url}/>
-          <Main/>
-          <Redirect to='/'/>
+          <Navigation url={this.state.url} />
+          <Main />
+          <Redirect to="/" />
         </BrowserRouter>
       </div>
     );

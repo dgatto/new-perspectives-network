@@ -42,10 +42,12 @@ export class About extends React.Component<Props> {
             <p className="header centered">Meet the Team!</p>
           </div>
         </Row>
-        <Row>
-          <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
-          <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
-          <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
+        <Row className="justify-content-md-center">
+          <Col md={12}>
+            <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
+            <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
+            <Profile userImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"></Profile>
+          </Col>
         </Row>
       </Container>
     );
