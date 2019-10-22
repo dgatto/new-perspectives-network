@@ -12,7 +12,7 @@ export class Vision extends React.Component<Props> {
     return (
       <Container>
         <Row>
-          <p className="centered header">Our Vision</p>
+          <p className="centered header">Our vision</p>
         </Row>
         <hr className="separator"></hr>
         <Row>

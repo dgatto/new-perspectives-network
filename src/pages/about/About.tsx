@@ -15,7 +15,7 @@ export class About extends React.Component<Props> {
       <Container>
         <Row>
           <div className="centered">
-            <p className="header centered">About Our Network</p>
+            <p className="header centered">About our network</p>
           </div>
         </Row>
         <hr className="separator" />

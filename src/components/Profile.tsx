@@ -3,8 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import {
   faTwitch,
-  faFacebook,
-  faInstagram,
   faYoutube,
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';

@@ -1,15 +1,22 @@
-import React from "react";
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-interface GalleryProps {};
+interface GalleryProps {}
 
 type Props = GalleryProps;
 
 export class Gallery extends React.Component<Props> {
   render() {
     return (
-      <div>
-        <p className="header">Welcome to New Perspectives Network</p>
-      </div>
+      <Container className="gallery-container">
+        <Row>
+          <div className="centered">
+            <p className="header centered">Gallery</p>
+          </div>
+        </Row>
+        <hr className="separator" />
+      </Container>
     );
   }
 }
