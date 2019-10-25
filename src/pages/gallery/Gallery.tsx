@@ -1,6 +1,9 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Profile } from '../../components/Profile';
+import { Game } from '../../components/Game';
 
 interface GalleryProps {}
 
@@ -8,6 +11,11 @@ type Props = GalleryProps;
 
 export class Gallery extends React.Component<Props> {
   render() {
+    const platforms = {
+      xbox: true,
+      playStation: true,
+      pc: true
+    };
     return (
       <Container className="gallery-container">
         <Row>
@@ -16,6 +24,54 @@ export class Gallery extends React.Component<Props> {
           </div>
         </Row>
         <hr className="separator" />
+        <Row className="d-flex justify-content-md-center">
+          <Col md={12} className="gallery-items">
+            <Game
+              galleryLink="codmw"
+              gameImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+            ></Game>
+            <Game
+              galleryLink="halo"
+              gameImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+            ></Game>
+            <Game
+              galleryLink="battlefield"
+              gameImage="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+            ></Game>
+          </Col>
+        </Row>
+        <hr className="separator"></hr>
+        <Row>
+          <div className="content-header centered">
+            <p className="header centered">A thank you to our sponsors</p>
+          </div>
+        </Row>
+        <Row>
+          <Col md={4}>
+            <a href="www.google.com">
+              <img
+                className="image"
+                src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+              ></img>
+            </a>
+          </Col>
+          <Col md={4}>
+            <a href="www.google.com">
+              <img
+                className="image"
+                src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+              ></img>
+            </a>
+          </Col>
+          <Col md={4}>
+            <a href="www.google.com">
+              <img
+                className="image"
+                src="https://drive.google.com/uc?id=1pmlBibDJ1_3SzdfD5pykIupEHePJd7ZM"
+              ></img>
+            </a>
+          </Col>
+        </Row>
       </Container>
     );
   }
